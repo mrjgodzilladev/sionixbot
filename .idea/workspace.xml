@@ -10,25 +10,28 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.489165999578783" />
-      <entry key="MS500" value="4.847283115448742" />
-      <entry key="S2" value="9.57229335633687" />
-      <entry key="S5" value="11.440564849032944" />
-      <entry key="S10" value="12.184333252556302" />
-      <entry key="S30" value="12.721604832002356" />
-      <entry key="S60" value="13.015923774183463" />
-      <entry key="M2" value="14.596713487598624" />
-      <entry key="M5" value="21.302040828829185" />
-      <entry key="M10" value="30.906148848276008" />
-      <entry key="M15" value="41.186428533871705" />
-      <entry key="M30" value="74.6223983448588" />
-      <entry key="H1" value="126.38527512929748" />
-      <entry key="H2" value="179.21427738305533" />
-      <entry key="H4" value="218.82830013216713" />
-      <entry key="D1" value="261.9848529998612" />
-      <entry key="W1" value="270.5377183687023" />
+      <entry key="MS100" value="1.4849029064760402" />
+      <entry key="MS500" value="3.8872118720156608" />
+      <entry key="S2" value="5.912246664962935" />
+      <entry key="S5" value="6.530610720716838" />
+      <entry key="S10" value="6.759122177320529" />
+      <entry key="S30" value="6.918311217141939" />
+      <entry key="S60" value="6.9770723752749575" />
+      <entry key="M2" value="7.523904905581268" />
+      <entry key="M5" value="12.707976750714497" />
+      <entry key="M10" value="23.005775442211412" />
+      <entry key="M15" value="33.562663785883" />
+      <entry key="M30" value="66.92947178339152" />
+      <entry key="H1" value="120.26205712388509" />
+      <entry key="H2" value="176.65514187856198" />
+      <entry key="H4" value="219.91231726626748" />
+      <entry key="D1" value="267.7908861865939" />
+      <entry key="W1" value="277.3612384459522" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -50,23 +53,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.449785882591877" />
-      <entry key="MS500" value="4.788089609279933" />
-      <entry key="S2" value="9.544342881254977" />
-      <entry key="S5" value="11.427714119183191" />
-      <entry key="S10" value="12.17759520282182" />
-      <entry key="S30" value="12.719285647425023" />
-      <entry key="S60" value="13.014750008464468" />
-      <entry key="M2" value="14.596101876317645" />
-      <entry key="M5" value="21.30175785464434" />
-      <entry key="M10" value="30.90598002113381" />
-      <entry key="M15" value="41.18629553046583" />
-      <entry key="M30" value="74.6222960371504" />
-      <entry key="H1" value="126.38519356603281" />
-      <entry key="H2" value="179.2142199308196" />
-      <entry key="H4" value="218.82826488283487" />
-      <entry key="D1" value="261.9848459063087" />
-      <entry key="W1" value="270.5377173203155" />
+      <entry key="MS100" value="1.4458747942863397" />
+      <entry key="MS500" value="3.8613279103896727" />
+      <entry key="S2" value="5.9016309019337" />
+      <entry key="S5" value="6.525861498089048" />
+      <entry key="S10" value="6.756654958786091" />
+      <entry key="S30" value="6.917467340343401" />
+      <entry key="S60" value="6.97664606538623" />
+      <entry key="M2" value="7.523669064081886" />
+      <entry key="M5" value="12.707815439890982" />
+      <entry key="M10" value="23.005645270633064" />
+      <entry key="M15" value="33.56254951443735" />
+      <entry key="M30" value="66.92937537293916" />
+      <entry key="H1" value="120.26197690605892" />
+      <entry key="H2" value="176.65508392885545" />
+      <entry key="H4" value="219.91228118891175" />
+      <entry key="D1" value="267.79087882853634" />
+      <entry key="W1" value="277.36123735584437" />
     </decayedShown>
   </component>
   <component name="PackageJsonUpdateNotifier">
@@ -81,25 +84,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;CidrDebugProfileConversion&quot;: &quot;true&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Setup Gamer/Desktop/Projetos/sionixbot&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "CidrDebugProfileConversion": "true",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Setup Gamer/Desktop/Projetos/sionixbot",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="sionixbot" />

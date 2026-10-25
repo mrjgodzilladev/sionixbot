@@ -45,12 +45,10 @@ Baixe e instale o [Node.js](https://nodejs.org/), versão 20 ou superior.
 Abra o terminal e execute:
 
 ```bash
-git clone https://github.com/SEU-USUARIO/sionixbot.git
+git clone https://github.com/mrjgodzilladev/sionixbot.git
 cd sionixbot
 npm install
 ```
-
-Troque `SEU-USUARIO` pelo usuário ou pela organização que mantém o repositório.
 
 ### 3. Configure seu bot
 
