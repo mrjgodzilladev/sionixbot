@@ -1,0 +1,92 @@
+============================================================
+  🌀 SIONIXBOT — O GUIA DO ZERO AO BOT RODANDO
+============================================================
+E aí! Beleza?
+
+Se você caiu aqui e nunca programou na vida, respira fundo. Você está no lugar certo. Este guia foi escrito pra ser como aquele amigo que senta do seu lado e te explica as coisas sem pressa.
+
+Vamos colocar o seu próprio bot no ar. Você só precisa de:
+1. Um computador (Windows, Linux ou até celular).
+2. Um pouco de paciência.
+
+Bora?
+
+------------------------------------------------------------
+PARTE 1: O QUE É ESSE TAL DE BOT?
+------------------------------------------------------------
+Imagina que o seu servidor do Discord é uma festa. O bot é tipo um segurança/garçom que fica lá 24h por dia, sem reclamar. Ele obedece a comandos que você dá (tipo /ban pra tirar alguém chato, ou /giveaway pra sortear um prêmio).
+
+Pra criar um bot, o Discord te dá um "Token". Pensa nele como a chave de casa do seu bot. Se você entregar essa chave pra alguém estranho, essa pessoa entra na sua casa. Então, NUNCA mostre o seu Token pra ninguém!
+
+------------------------------------------------------------
+PARTE 2: DANDO VIDA AO BOT (5 MINUTINHOS)
+------------------------------------------------------------
+1. Abre esse site aqui: https://discord.com/developers/applications
+2. Clica em "New Application" (Nova Aplicação) no cantinho direito. Dá um nome legal pro bot.
+3. No menu da esquerda, clica em "Bot".
+4. Clica em "Reset Token" e depois em "Copy" (Copiar). Guarda esse texto, é o seu TOKEN.
+5. Rola a página até "Privileged Gateway Intents" e liga as TRÊS chavinhas lá. Salva.
+
+Agora, pra colocar ele no seu servidor:
+1. Ainda no site, clica em "OAuth2" > "URL Generator".
+2. Em "Scopes", marca "bot" e "applications.commands".
+3. Em "Bot Permissions", marca "Administrator" (Administrador). Pode confiar, é o seu bot mesmo.
+4. Copia o link gerado lá embaixo, cola no navegador, escolhe o seu servidor e autoriza.
+
+------------------------------------------------------------
+PARTE 3: LIGANDO O BOT NO SEU PC
+------------------------------------------------------------
+1. Instala o Node.js: vai em https://nodejs.org/ e baixa a versão "LTS" (é só apertar "Next" até o fim).
+2. Baixa a pasta do SionixBot e extrai em qualquer lugar.
+3. Abre a pasta e procura o arquivo ".env.example". Renomeia ele pra ".env" (sem o .example no final).
+4. Abre o ".env" com o Bloco de Notas e cola o seu TOKEN e o ID do servidor (clica com o botão direito no ícone do servidor > Copiar ID).
+5. Abre o terminal (Prompt de Comando no Windows) na pasta do bot e digita:
+   npm install
+6. Depois de instalar tudo, digita:
+   npm start
+7. Pronto! O bot tá online. Vai no Discord e digita /setup pra configurar ele.
+
+------------------------------------------------------------
+PARTE 4: NÃO QUERO DEIXAR O PC LIGADO 24H
+------------------------------------------------------------
+Existem lugares que hospedam o bot de graça. O Render é um deles:
+1. Cria uma conta em https://render.com/
+2. Sobe o projeto pro GitHub (se não souber, pesquise "como subir projeto no GitHub").
+3. No Render, clica em "New" > "Web Service" e conecta o seu GitHub.
+4. Em "Build Command" coloca: npm install
+5. Em "Start Command" coloca: npm start
+6. Em "Environment Variables", adiciona o TOKEN e o GUILD_ID.
+
+E aí ele fica ligado lá pra sempre, sem você precisar fazer nada.
+
+------------------------------------------------------------
+PARTE 5: E SE EU QUISER CRIAR UM COMANDO?
+------------------------------------------------------------
+Você não precisa ser um gênio pra isso. Olha como é fácil:
+
+1. Vai na pasta "src/commands/util".
+2. Copia o arquivo "ping.js" e cola ali mesmo, com o nome "oi.js".
+3. Abre o arquivo com o Bloco de Notas.
+4. Onde tiver "data.name", troca pra "oi". Onde tiver "description", escreve "Diz olá".
+5. Lá embaixo, onde tem o código, você pode só apagar tudo e deixar assim:
+   return safeReply(ctx, { content: 'Olá, chefia!' });
+6. Salva e reinicia o bot.
+
+Agora digita /oi no Discord. Você acabou de criar seu primeiro comando. Viu como não é um bicho de sete cabeças?
+
+------------------------------------------------------------
+PARTE 6: ALGO DEU ERRADO! (S.O.S)
+------------------------------------------------------------
+1. O bot não liga? Verifica se o Node.js tá instalado (digita "node -v" no terminal). E olha se você não colocou espaço a mais no Token.
+2. O bot liga mas não responde? Você esqueceu de ligar as três chavinhas lá na Parte 2. Volta lá e confere.
+3. Deu erro de permissão no /ban? O cargo do bot tem que estar ACIMA do cargo da pessoa. Arrasta o cargo do bot pra cima na lista de cargos do servidor.
+4. O bot fica caindo no host free? É normal, eles têm pouca memória. O SionixBot já é bem leve, mas se cair muito, tenta outro host ou faz upgrade.
+
+------------------------------------------------------------
+FIM!
+------------------------------------------------------------
+Ufa! Chegamos ao fim. Se você chegou até aqui e o seu bot tá rodando, meus parabéns! Você é oficialmente o dono de um bot.
+
+Se precisar de ajuda, abre uma "Issue" lá no GitHub. A gente se ajuda.
+
+Abração e bom jogo! 🌀

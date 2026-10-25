@@ -1,0 +1,92 @@
+{
+  "prefix": "!!!",
+  "embedColor": "#5865F2",
+  "emoji": "🌀",
+  "modules": {
+    "tickets": true,
+    "giveaway": true,
+    "automod": true
+  },
+  "logs": {
+    "enabled": true,
+    "channelId": "1438223800402444441"
+  },
+  "welcome": {
+    "enabled": false,
+    "channelId": "",
+    "dm": false,
+    "message": "Olá {user}, seja bem-vindo(a) ao **{server}**! Você é o membro **{memberCount}**."
+  },
+  "goodbye": {
+    "enabled": false,
+    "channelId": "",
+    "message": "Até logo, **{username}**."
+  },
+  "autorole": {
+    "humans": "",
+    "bots": "",
+    "tempRole": "",
+    "tempRoleMinutes": 0
+  },
+  "antiraid": {
+    "enabled": false,
+    "joinsLimit": 10,
+    "joinsWindowSeconds": 10,
+    "autoLockdown": true
+  },
+  "antispam": {
+    "enabled": false,
+    "messagesLimit": 5,
+    "windowSeconds": 5,
+    "timeoutSeconds": 60
+  },
+  "automod": {
+    "blockInvites": false,
+    "blockEveryone": false,
+    "blockCaps": false,
+    "capsMinLength": 10,
+    "blockMentionSpam": false,
+    "mentionLimit": 5,
+    "blockedWords": [],
+    "blockShorteners": false
+  },
+  "trust": {
+    "enabled": false,
+    "minAccountAgeDays": 7,
+    "messagesLimit": 3,
+    "windowSeconds": 10
+  },
+  "strikes": {
+    "muteAt": 3,
+    "muteHours": 1,
+    "kickAt": 5,
+    "banAt": 7
+  },
+  "tickets": {
+    "categoryId": "",
+    "supportRoleId": "",
+    "transcriptChannelId": "",
+    "categories": [
+      "Suporte",
+      "Denúncia",
+      "Parceria"
+    ],
+    "categoryIds": {}
+  },
+  "giveaway": {
+    "defaultWinners": 1,
+    "defaultDuration": "1h",
+    "requireRole": "",
+    "requireAccountDays": 0,
+    "requireBoost": false
+  },
+  "sugestoes": {
+    "channelId": "",
+    "anonymousDefault": false,
+    "createThread": true
+  },
+  "tempban": {
+    "defaultDays": 7,
+    "maxDays": 30
+  }
+}
