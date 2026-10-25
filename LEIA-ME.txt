@@ -1,86 +1,148 @@
 ============================================================
-  🌀 SIONIXBOT — O GUIA DO ZERO AO BOT RODANDO
+  SIONIXBOT — O GUIA DO ZERO AO BOT (SEM COMPLICAÇÃO)
 ============================================================
-E aí! Beleza?
+E aí, beleza?
 
-Se você caiu aqui e nunca programou na vida, respira fundo. Você está no lugar certo. Este guia foi escrito pra ser como aquele amigo que senta do seu lado e te explica as coisas sem pressa.
+Se você nunca programou na vida e caiu de paraquedas aqui, respira fundo. Você tá no lugar certo. Este guia foi escrito pra ser tipo aquele amigo que senta do seu lado e te explica tudo com calma, sem usar palavras difíceis.
 
-Vamos colocar o seu próprio bot no ar. Você só precisa de:
-1. Um computador (Windows, Linux ou até celular).
-2. Um pouco de paciência.
+A gente vai colocar o seu próprio bot no ar. Você só vai precisar de:
+1. Um computador (ou até celular, se for guerreiro).
+2. Uns 15 minutinhos de paciência.
 
-Bora?
+Bora nessa?
 
 ------------------------------------------------------------
-PARTE 1: O QUE É ESSE TAL DE BOT?
+PARTE 1: O QUE É ESSE TAL DE BOT E O TOKEN?
 ------------------------------------------------------------
-Imagina que o seu servidor do Discord é uma festa. O bot é tipo um segurança/garçom que fica lá 24h por dia, sem reclamar. Ele obedece a comandos que você dá (tipo /ban pra tirar alguém chato, ou /giveaway pra sortear um prêmio).
+Imagina que o seu servidor do Discord é uma festa. O bot é tipo o segurança ou o garçom que fica lá 24 horas por dia, sem reclamar. Ele obedece aos comandos que você dá (tipo /ban pra tirar alguém chato, ou /giveaway pra sortear um prêmio).
 
-Pra criar um bot, o Discord te dá um "Token". Pensa nele como a chave de casa do seu bot. Se você entregar essa chave pra alguém estranho, essa pessoa entra na sua casa. Então, NUNCA mostre o seu Token pra ninguém!
+Pra criar um bot, o Discord te dá um "Token". Pensa nele como se fosse a chave da sua casa. Se você entregar essa chave pra um estranho, ele entra na sua casa. Então, NUNCA mostre o seu Token pra ninguém!
 
 ------------------------------------------------------------
 PARTE 2: DANDO VIDA AO BOT (5 MINUTINHOS)
 ------------------------------------------------------------
 1. Abre esse site aqui: https://discord.com/developers/applications
-2. Clica em "New Application" (Nova Aplicação) no cantinho direito. Dá um nome legal pro bot.
+2. Clica no botão "New Application" (Nova Aplicação) e dá um nome maneiro pro seu bot (ex: "Bot do João").
 3. No menu da esquerda, clica em "Bot".
-4. Clica em "Reset Token" e depois em "Copy" (Copiar). Guarda esse texto, é o seu TOKEN.
-5. Rola a página até "Privileged Gateway Intents" e liga as TRÊS chavinhas lá. Salva.
+4. Clica em "Reset Token" e depois em "Copy" (Copiar). GUARDA ESSE CÓDIGO! É o seu TOKEN.
+5. Ainda nessa página, rola até "Privileged Gateway Intents" e liga as TRÊS chavinhas (PRESENCE, SERVER MEMBERS e MESSAGE CONTENT). Não esquece de salvar.
 
 Agora, pra colocar ele no seu servidor:
 1. Ainda no site, clica em "OAuth2" > "URL Generator".
-2. Em "Scopes", marca "bot" e "applications.commands".
-3. Em "Bot Permissions", marca "Administrator" (Administrador). Pode confiar, é o seu bot mesmo.
-4. Copia o link gerado lá embaixo, cola no navegador, escolhe o seu servidor e autoriza.
+2. Em "Scopes", marca a caixinha "bot" e "applications.commands".
+3. Em "Bot Permissions", marca "Administrator" (Administrador). Pode confiar, é o seu bot mesmo! Isso evita erros chatos de permissão.
+4. Copia o link que apareceu lá embaixo, cola no navegador, escolhe o seu servidor e autoriza.
+5. Se o bot não aparecer no servidor, fecha e abre o Discord de novo.
 
 ------------------------------------------------------------
-PARTE 3: LIGANDO O BOT NO SEU PC
+PARTE 3: LIGANDO O BOT NO SEU PC (A PARTE MAIS TEMIDA)
 ------------------------------------------------------------
+DICA DE OURO USUÁRIOS DE WINDOWS: O Windows esconde a extensão dos arquivos. Se você renomear o ".env.example" para ".env", pode ser que ele vire ".env.txt" e o bot não ligue. Fica esperto!
+
 1. Instala o Node.js: vai em https://nodejs.org/ e baixa a versão "LTS" (é só apertar "Next" até o fim).
 2. Baixa a pasta do SionixBot e extrai em qualquer lugar.
-3. Abre a pasta e procura o arquivo ".env.example". Renomeia ele pra ".env" (sem o .example no final).
-4. Abre o ".env" com o Bloco de Notas e cola o seu TOKEN e o ID do servidor (clica com o botão direito no ícone do servidor > Copiar ID).
-5. Abre o terminal (Prompt de Comando no Windows) na pasta do bot e digita:
-   npm install
-6. Depois de instalar tudo, digita:
-   npm start
-7. Pronto! O bot tá online. Vai no Discord e digita /setup pra configurar ele.
+3. Abre a pasta do bot e procura o arquivo ".env.example".
+4. Renomeia ele pra ".env" (sem o .example no final). Se o Windows reclamar, clica em "Sim".
+5. Abre o ".env" com o Bloco de Notas e cola o seu TOKEN e o ID do servidor (clica com o botão direito no ícone do servidor no Discord > Copiar ID).
+6. Agora a parte do terminal: abre a pasta do bot, clica na barra de endereço lá em cima, digita "cmd" e aperta Enter. O terminal vai abrir.
+7. No terminal, digita: npm install (e espera uns minutinhos).
+8. Depois de instalar, digita: npm start.
+
+Se aparecer no terminal "Logado como SeuBot#1234", é porque deu tudo certo! O bot tá online.
 
 ------------------------------------------------------------
-PARTE 4: NÃO QUERO DEIXAR O PC LIGADO 24H
+PARTE 4: NÃO QUERO DEIXAR O PC LIGADO 24H (HOST FREE)
 ------------------------------------------------------------
-Existem lugares que hospedam o bot de graça. O Render é um deles:
+Se não quiser deixar o PC ligado o dia todo, dá pra hospedar de graça. O Render é um dos lugares:
 1. Cria uma conta em https://render.com/
-2. Sobe o projeto pro GitHub (se não souber, pesquise "como subir projeto no GitHub").
-3. No Render, clica em "New" > "Web Service" e conecta o seu GitHub.
-4. Em "Build Command" coloca: npm install
-5. Em "Start Command" coloca: npm start
-6. Em "Environment Variables", adiciona o TOKEN e o GUILD_ID.
+2. Sobe o projeto pro GitHub (se não souber, pesquisa "como subir projeto no GitHub", é rapidinho).
+3. No Render, clica em "New" > "Background Worker".
+4. Conecta o seu GitHub e escolhe o repositório do bot.
+5. Em "Build Command", coloca: npm install
+6. Em "Start Command", coloca: npm start
+7. Vai na aba "Environment Variables" e adiciona o seu TOKEN e o GUILD_ID.
+8. Clica em "Create". O bot vai ligar sozinho.
 
-E aí ele fica ligado lá pra sempre, sem você precisar fazer nada.
+Nota: O plano grátis do Render "dorme" se ficar muito tempo sem uso. Não se preocupa, ele acorda sozinho quando alguém manda mensagem.
 
 ------------------------------------------------------------
-PARTE 5: E SE EU QUISER CRIAR UM COMANDO?
+PARTE 5: CONFIGURANDO O BOT (O JEITO FÁCIL)
 ------------------------------------------------------------
-Você não precisa ser um gênio pra isso. Olha como é fácil:
+Agora que o bot tá online, você não precisa abrir arquivos de código pra configurar. Só usar o comando:
+/setup
+
+Ele vai te dar um menu com as opções (Logs, Tickets, Boas-vindas). Só escolher e seguir as instruções.
+Lembrete: O bot precisa ter permissão de "Ver Canal" e "Enviar Mensagens" nos canais que ele for usar.
+
+------------------------------------------------------------
+PARTE 6: CRIANDO O SEU PRIMEIRO COMANDO (DO ZERO)
+------------------------------------------------------------
+Bora criar um comando que manda um abraço? Não se assusta com o código, eu vou explicar cada pedacinho.
 
 1. Vai na pasta "src/commands/util".
-2. Copia o arquivo "ping.js" e cola ali mesmo, com o nome "oi.js".
-3. Abre o arquivo com o Bloco de Notas.
-4. Onde tiver "data.name", troca pra "oi". Onde tiver "description", escreve "Diz olá".
-5. Lá embaixo, onde tem o código, você pode só apagar tudo e deixar assim:
-   return safeReply(ctx, { content: 'Olá, chefia!' });
-6. Salva e reinicia o bot.
+2. Copia o arquivo "ping.js" e cola com o nome "abracar.js".
+3. Abre ele com o Bloco de Notas. Vai parecer um monstro, mas a gente vai apagar quase tudo e deixar assim:
 
-Agora digita /oi no Discord. Você acabou de criar seu primeiro comando. Viu como não é um bicho de sete cabeças?
+const { SlashCommandBuilder } = require('discord.js');
+const { sucesso } = require('../../core/embed');
+
+module.exports = {
+  categoria: 'Diversão',
+  data: new SlashCommandBuilder()
+    .setName('abracar')
+    .setDescription('Manda um abraço pra alguém'),
+  
+  async execute({ interaction, isSlash }) {
+    if (!isSlash) return;
+    await interaction.reply({ 
+      embeds: [sucesso('Você recebeu um abraço virtual!')] 
+    });
+  }
+};
+
+4. O que cada linha faz:
+   - setName('abracar'): O nome do comando no Discord.
+   - setDescription: O textinho que aparece embaixo no menu.
+   - async execute: A parte onde o bot faz a ação.
+   - interaction.reply: O bot respondendo.
+   - sucesso('...'): Monta a caixinha bonitinha.
+
+5. Salva e reinicia o bot (Ctrl+C no terminal e "npm start").
+6. Vai no Discord e digita /abracar.
+
+Parabéns, você criou seu primeiro comando!
 
 ------------------------------------------------------------
-PARTE 6: ALGO DEU ERRADO! (S.O.S)
+PARTE 7: PRIMEIROS SOCORROS (ERROS QUE TODO MUNDO COMETE)
 ------------------------------------------------------------
-1. O bot não liga? Verifica se o Node.js tá instalado (digita "node -v" no terminal). E olha se você não colocou espaço a mais no Token.
-2. O bot liga mas não responde? Você esqueceu de ligar as três chavinhas lá na Parte 2. Volta lá e confere.
-3. Deu erro de permissão no /ban? O cargo do bot tem que estar ACIMA do cargo da pessoa. Arrasta o cargo do bot pra cima na lista de cargos do servidor.
-4. O bot fica caindo no host free? É normal, eles têm pouca memória. O SionixBot já é bem leve, mas se cair muito, tenta outro host ou faz upgrade.
+Calma, não entrou em pânico! Se algo deu errado, é normal. Todo programador (até os experientes) erra. Aqui está o guia para consertar:
+
+* ERRO: "O terminal diz que 'npm' ou 'node' não é reconhecido."
+  O QUE FAZER: Você esqueceu de instalar o Node.js ou não reiniciou o computador depois de instalar. Volta na Parte 3, passo 1.
+
+* ERRO: "O terminal fechou sozinho logo depois que eu dei 'npm start'."
+  O QUE FAZER: Isso não é um erro! O bot só fica online enquanto a janela do terminal estiver aberta. Se você fechar, ele desliga.
+
+* ERRO: "Deu 'Token inválido' ou 'An invalid token was provided'."
+  O QUE FAZER: O seu TOKEN no arquivo .env tá errado. Pode ter um espaço a mais, ou você copiou o código errado. Gera um novo no Developer Portal e cola de novo, sem espaços.
+
+* ERRO: "O bot está online, mas quando eu digito /ping ele não faz nada."
+  O QUE FAZER: Duas coisas. 1) Verifique se você ligou as três chavinhas (Parte 2, passo 5). 2) Vá nas configurações do canal no Discord e veja se o bot tem permissão de "Usar Comandos de Barra". 3) Feche e abra o Discord (às vezes o Discord demora pra carregar comandos novos).
+
+* ERRO: "Deu 'Missing Permissions' ou 'Missing Access' no /ban."
+  O QUE FAZER: O cargo do bot precisa estar ACIMA do cargo da pessoa que você quer banir. Vá nas Configurações do Servidor > Cargos e arraste o cargo do bot pra cima.
+
+* ERRO: "O bot apagou minha mensagem do nada!"
+  O QUE FAZER: Você ativou o Anti-Spam ou o Trust Score. Vá no arquivo config.json e mude os campos "antispam" e "trust" para false.
+
+* ERRO: "Deu erro no Render (Build failed) e o bot não ligou."
+  O QUE FAZER: Você provavelmente digitou algo errado no Build Command ou no Start Command. Confere se tá exatamente "npm install" e "npm start".
+
+* ERRO: "Eu mudei o nome do bot no site do Discord, mas o rodapé das mensagens continua 'SionixBot'."
+  O QUE FAZER: O bot puxa o nome automaticamente ao ligar. Se você mudou no site, precisa ir no Render (ou terminal) e reiniciar o bot para ele atualizar.
+
+* ERRO: "O bot tá com a cor errada / eu não gosto do nome SionixBot."
+  O QUE FAZER: Abra o arquivo config.json e mude o "embedColor" e o "emoji". Se quiser mudar o nome do bot, vá no Developer Portal e mude o nome dele.
 
 ------------------------------------------------------------
 FIM!
@@ -89,4 +151,4 @@ Ufa! Chegamos ao fim. Se você chegou até aqui e o seu bot tá rodando, meus pa
 
 Se precisar de ajuda, abre uma "Issue" lá no GitHub. A gente se ajuda.
 
-Abração e bom jogo! 🌀
+Abração e bom jogo!
